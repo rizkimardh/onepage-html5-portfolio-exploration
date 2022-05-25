@@ -1,0 +1,91 @@
+@media (max-width: 601px){
+    .home .home-content img{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d";
+        transition: all 0.3s ease;
+    }
+    .navbar .menu .contact-btn{
+        font-size: 21px;
+        margin-right: 5px;
+        margin-top: 20px;
+        color: #FF5A00;
+        border: 2px solid #FF5A00;
+    }
+    .navbar .menu .contact-btn:hover{
+        color: #222;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #222;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 0 0 60px 0; 
+        font-size: 21px;
+        color: #FFF;
+    }
+    .navbar .menu li a:hover{
+        color: #222;
+    }
+    .home .max-width{
+        width: 100%;
+    }
+    .home .home-content img{
+        width: 500px;
+    }
+    .services .services-content .card{
+        width: calc(50% - 20px);
+        /* background: #FFC107; */
+        /* border-radius: 10px; */
+        margin: 10px;
+    }
+    .contact .contact-content .column{
+        width: calc(100%);
+    }
+}
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1200px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 1330px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .line{
+        width: 100%;
+    }
+}
